@@ -19,6 +19,24 @@
             size: self.width, 5
     
     Label:
+        canvas:
+            Rectangle:
+                pos: self.x, self.y
+                size: 5, self.height
+            
+            Rectangle:
+                pos: self.x, self.y
+                size: self.width, 5
+
+            Rectangle:
+                pos: self.x + self.width - 5, self.y
+                size: 5, self.height
+            
+            Rectangle:
+                pos: self.x, self.y + self.height - 5
+                size: self.width, 5
+
         font_size: 50
         center: self.parent.center
+        size: 400, 75
         text: "Hello, Sauna!"
